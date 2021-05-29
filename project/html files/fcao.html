@@ -1,0 +1,38 @@
+<form action="/cgi-bin/SupplyDB/query1.py" method="GET">
+<p><h2>Retrieve the information about the cost and suppliers who supply a given part</h2></p>
+<p>Please enter a part name (The first letter is upper-case)</p>
+	<input type = "text" name = "partname"><br>
+	<input type = "hidden" name = "kind" value = "A"><br>
+	<input type = "submit" value = "Submit">
+</form> 
+<form action="/cgi-bin/SupplyDB/query2.py" method="GET">
+<p><h2>Retrieve the names of the suppliers who have ever supplied a part with that cost or higher</h2></p>
+<p>Please enter a cost</p>
+	<input type = "text" name = "cost"><br>
+	<input type = "hidden" name = "kind" value = "A"><br>
+	<input type = "submit" value = "Submit">
+</form> 
+<form action="/cgi-bin/SupplyDB/query3.py" method="GET">
+<p><h2>Retrieve the names and addresses for the suppliers who charge the most for that part</h2></p>
+<p>Please enter a pid</p>
+	<input type = "text" name = "pid"><br>
+	<input type = "hidden" name = "kind" value = "A"><br>
+	<input type = "submit" value = "Submit">
+</form> 
+<form action="/cgi-bin/SupplyDB/query4.py" method="GET">
+<p><h2>Retrieve the names of the parts with that color which were supplied by all the suppliers in the given address</h2></p>
+<p>Please enter a color</p>
+	<input type = "text" name = "colour"><br>
+	<input type = "hidden" name = "kind" value = "A"><br>
+<p>Please enter an address</p>
+	<input type = "text" name = "saddress"><br>
+	<input type = "hidden" name = "kind" value = "A"><br>
+	<input type = "submit" value = "Submit">
+</form> 
+<form action="/cgi-bin/SupplyDB/query5.py" method="GET">
+<p><h2>Retrieve the sids and names of the suppliers in that address who do not supply any part</h2></p>
+<p>Please enter an address</p>
+	<input type = "text" name = "saddress"><br>
+	<input type = "hidden" name = "kind" value = "A"><br>
+	<input type = "submit" value = "Submit">
+</form> 
